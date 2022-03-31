@@ -22,13 +22,16 @@ $titleBorder: 1px solid #bdbdbd;
 html {
     width: 80%;
     margin: auto;
-    letter-spacing: 1px;
     scroll-behavior: smooth;
     background: #222222;
     color: #fff;
     @media screen and (max-width: 1305px) {
         width: 95%;
     }
+}
+
+body {
+    font-family: 'Space Mono', monospace;
 }
 
 a {
