@@ -1,0 +1,27 @@
+// variables
+$titleFontsize: 30px;
+$subtitleFontsize: 24px;
+$paraFontsize: 20px;
+$titleBorder: 1px solid #bdbdbd;
+//
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: $titleBorder;
+    min-height: 20vh;
+    h4 {
+        margin-top: 50px;
+        font-size: $subtitleFontsize;
+    }
+    .icon-container {
+        display: flex;
+        margin-top: 20px;
+        a {
+            margin: 0 10px;
+            img {
+                width: 35px;
+            }
+        }
+    }
+}
