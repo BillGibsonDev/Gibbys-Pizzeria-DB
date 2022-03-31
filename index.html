@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/pizzaRed.png" type="image/x-icon">
+    <title>Gibby's Pizzeria DB</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo-container">
+            <img class="logo" src="/images/pizzaRed.png" alt="">
+            <h2 class="logo-title">Gibby's Pizzeria DB</h2>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#getting-started">Documentation</a>
+        </div>
+    </nav>
+    <aside class="sidebar">
+        <a href="#getting-started">Getting Started<img class="logo" src="/images/pizzaRed.png" alt=""></a>
+        <a href="#get-menu">Get Menu<img class="logo" src="/images/pizzaRed.png" alt=""></a>
+        <a href="#get-menu-item">Get a Menu Item<img class="logo" src="/images/pizzaRed.png" alt=""></a>
+    </aside>
+    <div class="page-wrapper">
+        <section id="landing">
+            <div class="title-container">
+                <h3>Hello, Welcome to Gibby's Pizzeria DB</h3>
+                <p>I created this database for a project when I could not find a proper API to use when creating a React Menu. I hope it serves you well!</p>
+            </div>
+        </section>
+        <section id="getting-started">
+            <div class="title-container">
+                <h3>Getting Started</h3>
+                <p>There are no restrictions or keys. Feel free to use this database as you choose!</p>
+                <p>This is hosted on a heroku server. For those unfirmiliar with Heroku, the servers are free to use up until a certain threshold. However, the servers go to "sleep" after about 30min. Your first attempt at accessing the database will take
+                    the longest. After this the server should be "awake" and your access should be almost instant.</p>
+            </div>
+        </section>
+        <section id="get-menu">
+            <div class="title-container">
+                <h3>Get Menu</h3>
+                <h4>Retrieve all menu items in a array</h4>
+                <a href="https://gibbys-galleria.herokuapp.com/menu" target="_blank"><span>URL: </span>https://gibbys-galleria.herokuapp.com/menu</a>
+                <div class="example-container">
+                    <h4>JavaScript Fetch Example</h4>
+                    <img src="/images/getMenu.png" alt="">
+                    <h4>Response Example</h4>
+                    <img class="example" src="/images/menuItems.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="get-menu-item">
+            <div class="title-container">
+                <h3>Get a Menu Item</h3>
+                <h4>Retrieve a menu item as an object</h4>
+                <a href="https://gibbys-galleria.herokuapp.com/menu/62328919b85e32862854df7d" target="_blank">https://gibbys-galleria.herokuapp.com/menu/itemID</a>
+                <div class="example-container">
+                    <h4>JavaScript Fetch Example</h4>
+                    <img src="/images/getMenuItem.png" alt="">
+                    <h4>Response Example</h4>
+                    <img class="example" src="/images/itemExample.png" alt="">
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>

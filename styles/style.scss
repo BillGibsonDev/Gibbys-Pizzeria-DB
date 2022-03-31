@@ -1,0 +1,63 @@
+@import 'nav';
+@import 'sidebar';
+@import 'landing';
+@import 'gettingStarted';
+@import 'getMenu';
+@import 'getMenuItem';
+//
+// variables
+$titleFontsize: 30px;
+$subtitleFontsize: 24px;
+$paraFontsize: 20px;
+$titleBorder: 1px solid #bdbdbd;
+//
+// global styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+    background: #222222;
+    color: #fff;
+    @media screen and (max-width: 1305px) {
+        width: 95%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #e2e2e2;
+    &:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+}
+
+p {
+    color: #e2e2e2;
+}
+
+#landing,
+#getting-started,
+#get-menu,
+#get-menu-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70%;
+    margin-left: 20%;
+    margin-bottom: 20vh;
+    @media screen and (max-width: 1305px) {
+        width: 85%;
+    }
+    @media screen and (max-width: 750px) {
+        width: 95%;
+        margin: auto;
+    }
+}

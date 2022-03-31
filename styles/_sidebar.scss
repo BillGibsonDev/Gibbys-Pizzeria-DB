@@ -1,0 +1,31 @@
+// variables
+$titleFontsize: 30px;
+$subtitleFontsize: 24px;
+$paraFontsize: 20px;
+$titleBorder: 1px solid #bdbdbd;
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    width: 200px;
+    height: 200px;
+    border-right: 1px solid #bdbdbd;
+    a {
+        font-size: $paraFontsize;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        .logo {
+            width: 20px;
+            margin-left: 6px;
+            display: none;
+        }
+        &:hover .logo {
+            display: block;
+        }
+    }
+    @media screen and (max-width: 755px) {
+        display: none;
+    }
+}

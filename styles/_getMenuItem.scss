@@ -1,0 +1,38 @@
+// variables
+$titleFontsize: 30px;
+$subtitleFontsize: 24px;
+$paraFontsize: 20px;
+$titleBorder: 1px solid #bdbdbd;
+//
+#get-menu-item {
+    .title-container {
+        width: 90%;
+        h3 {
+            margin-bottom: 20px;
+            font-size: $titleFontsize;
+            border-bottom: $titleBorder;
+            @media screen and (max-width: 750px) {
+                font-size: 20px;
+            }
+        }
+        h4 {
+            font-size: $subtitleFontsize;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            @media screen and (max-width: 750px) {
+                font-size: 18px;
+            }
+        }
+        a {
+            font-size: $paraFontsize;
+            line-height: 1.5;
+        }
+    }
+    .example-container {
+        h4 {
+            margin-top: 20px;
+            font-size: $subtitleFontsize;
+            font-weight: 400;
+        }
+    }
+}

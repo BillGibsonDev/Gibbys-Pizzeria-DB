@@ -1,0 +1,268 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 10vh;
+  border-bottom: 1px solid #bdbdbd;
+  margin-bottom: 20px;
+}
+
+nav .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo-container .logo {
+  width: 25px;
+  margin-right: 6px;
+}
+
+nav .logo-container .logo-title {
+  font-size: 30px;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 250px;
+}
+
+nav .nav-links a {
+  font-size: 20px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 20%;
+  width: 200px;
+  height: 200px;
+  border-right: 1px solid #bdbdbd;
+}
+
+.sidebar a {
+  font-size: 20px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar a .logo {
+  width: 20px;
+  margin-left: 6px;
+  display: none;
+}
+
+.sidebar a:hover .logo {
+  display: block;
+}
+
+@media screen and (max-width: 755px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+#landing {
+  margin-bottom: 20vh;
+}
+
+#landing .title-container {
+  width: 90%;
+}
+
+#landing .title-container h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#landing .title-container p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#getting-started .title-container {
+  width: 90%;
+}
+
+#getting-started .title-container h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+#getting-started .title-container p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#get-menu .title-container {
+  width: 90%;
+}
+
+#get-menu .title-container h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+#get-menu .title-container h4 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#get-menu .title-container a {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#get-menu .example-container h4 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#get-menu-item .title-container {
+  width: 90%;
+}
+
+#get-menu-item .title-container h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+@media screen and (max-width: 750px) {
+  #get-menu-item .title-container h3 {
+    font-size: 20px;
+  }
+}
+
+#get-menu-item .title-container h4 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  #get-menu-item .title-container h4 {
+    font-size: 18px;
+  }
+}
+
+#get-menu-item .title-container a {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#get-menu-item .example-container h4 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 80%;
+  margin: auto;
+  letter-spacing: 1px;
+  scroll-behavior: smooth;
+  background: #222222;
+  color: #fff;
+}
+
+@media screen and (max-width: 1305px) {
+  html {
+    width: 95%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+p {
+  color: #e2e2e2;
+}
+
+#landing,
+#getting-started,
+#get-menu,
+#get-menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 70%;
+  margin-left: 20%;
+  margin-bottom: 20vh;
+}
+
+@media screen and (max-width: 1305px) {
+  #landing,
+  #getting-started,
+  #get-menu,
+  #get-menu-item {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #landing,
+  #getting-started,
+  #get-menu,
+  #get-menu-item {
+    width: 95%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
